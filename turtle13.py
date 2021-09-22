@@ -1,0 +1,46 @@
+import turtle
+
+def fund(x): 
+    for el in range(180):
+        turtle.forward(x)
+        turtle.right(1)
+def funk(x): 
+    for el in range(360):
+        turtle.forward(x)
+        turtle.right(1)
+
+turtle.shape('turtle')
+turtle.speed(0)
+turtle.fillcolor('yellow')
+turtle.begin_fill()
+funk(3)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(-50,-50)
+turtle.pendown()
+turtle.fillcolor('blue')
+turtle.begin_fill()
+funk(0.6)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(50,-50)
+turtle.pendown()
+turtle.fillcolor('blue')
+turtle.begin_fill()
+funk(0.6)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(0,-150)
+turtle.pendown()
+turtle.right(90)
+turtle.width(10)
+turtle.forward(60)
+turtle.width(1)
+turtle.penup()
+turtle.goto(100,-200)
+turtle.pendown()
+turtle.width(10)
+turtle.color('red')
+fund(1.7)
+
+turtle.done()
