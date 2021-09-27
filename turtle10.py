@@ -12,5 +12,5 @@ for ol in range(6):
     turtle.right(180)
     func()
     turtle.right(30)
-    
+    print(wefwef)
 turtle.done()
