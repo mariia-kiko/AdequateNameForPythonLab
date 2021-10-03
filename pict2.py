@@ -1,6 +1,6 @@
 import pygame
 from pygame.draw import *
-
+import math as m
 pygame.init()
 
 FPS = 30
@@ -36,8 +36,22 @@ line(screen, (0, 0, 0), (185, 380), (125, 350))
 
 rect(screen, (168,47,20), (550,270,250,50))
 polygon(screen, (168,47,20), [(800,270), (925,270),
-                               (800,320),])
-arc(screen, (168,47,20), (450,270,100,50), 3.14, 1.5*3.14, 100)
+                               (800,320)])
+arc(screen,(168,47,20),[508,220,100,100],m.pi,m.pi*1.5,50)
+arc(screen,(168,47,20),[509,220,100,100],m.pi,m.pi*1.5,50)
+arc(screen,(168,47,20),[510,220,100,100],m.pi,m.pi*1.5,50)
+rect(screen, (0,0,0), (650, 120, 7, 150))
+polygon(screen, (255,255,255), [(657,120), (690,195),
+                               (760,195)])
+polygon(screen, (255,255,255), [(657,270), (690,195),
+                               (760,195)])
+line(screen, (0, 0, 0), (657, 120), (690, 195))      
+line(screen, (0, 0, 0), (657, 120), (760, 195))
+line(screen, (0, 0, 0), (657, 270), (690, 195))
+line(screen, (0, 0, 0), (657, 270), (760, 195))
+line(screen, (0, 0, 0), (690, 195), (760, 195)) 
+circle(screen, (255,255,255), (765,295), 18)   
+circle(screen, (0,0,0), (765,295), 18, 2)                    
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
